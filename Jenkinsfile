@@ -1,14 +1,13 @@
 pipeline {
     agent any
     environment {
-        DIRECTORY_PATH = 'https://github.com/hariprasadVenugopal/sit753-6_1C.git'
         STAGING_ENVIRONMENT = 'AWS EC2 - Staging'
         PRODUCTION_ENVIRONMENT = 'AWS EC2 - Production'
     }
     stages {
         stage('Build') {
             steps {
-                echo "fetch the source code from the directory path: ${env.DIRECTORY_PATH}"
+                echo "fetch the source code from the directory path"
                 echo "building code using Maven"
             }
         }
