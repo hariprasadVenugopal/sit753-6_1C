@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "fetch the source code from the directory path"
+                echo "fetch the source code"
                 echo "building code using Maven"
             }
         }
