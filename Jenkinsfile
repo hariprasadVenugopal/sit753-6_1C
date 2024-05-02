@@ -15,6 +15,7 @@ pipeline {
             steps {
                 echo "running unit tests using JUnit"
                 echo "running integration tests using Selenium"
+                sh 'exit 1'
             }
             post {
                 success {
