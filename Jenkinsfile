@@ -22,7 +22,9 @@ pipeline {
                     emailext(
                         subject: "SUCCESS: Unit and Integration Tests",
                         body: "The unit and integration tests passed successfully.",
-                        to: 'developer@example.com'
+                        from: 'jnknstester@gmail.com',
+                        to: 's223736039@deakin.edu.au',
+                        attachLog: true
                     )
                 }
                 failure {
@@ -30,7 +32,9 @@ pipeline {
                     emailext(
                         subject: "FAILURE: Unit and Integration Tests",
                         body: "The unit and integration tests failed. Please check the logs.",
-                        to: 'developer@example.com'
+                        from: 'jnknstester@gmail.com',
+                        to: 's223736039@deakin.edu.au',
+                        attachLog: true
                     )
                 }
             }
@@ -50,7 +54,9 @@ pipeline {
                     emailext(
                         subject: "SUCCESS: Security Scan",
                         body: "The security scan passed successfully.",
-                        to: 'jnknstester@gmail.com'
+                        from: 'jnknstester@gmail.com',
+                        to: 's223736039@deakin.edu.au',
+                        attachLog: true
                     )
                 }
                 failure {
@@ -58,7 +64,9 @@ pipeline {
                     emailext(
                         subject: "FAILURE: Security Scan",
                         body: "The security scan has found issues. Please review the security report.",
-                        to: 'jnknstester@gmail.com'
+                        from: 'jnknstester@gmail.com',
+                        to: 's223736039@deakin.edu.au',
+                        attachLog: true
                     )
                 }
             }
